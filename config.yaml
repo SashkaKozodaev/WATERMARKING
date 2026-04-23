@@ -1,7 +1,7 @@
 # Параметры модели
 repo_id: "cvssp/audioldm-s-full-v2"
 device: "cuda"
-cache_dir: "model_cache"
+cache_dir: "/home/jovyan/kozodaev/WATERMARKING/model_cache"
 
 # Параметры генерации
 prompt: "Clear Techno music with a strong, upbeat tempo"
@@ -9,16 +9,16 @@ audio_length_in_s: 3.0
 num_inference_steps: 50
 
 # Параметры водяного знака
-n_bits: 35           # длина водяного знака
+n_bits: 20           # длина водяного знака
 epsilon: 0.1         # минимальный зазор
 lambda_wm: 1.0       # вес водяного лосса
 lambda_qual: 150.0   # вес лосса качества
 
 # Параметры оптимизации
-optimization_steps: 100   # количество шагов
+optimization_steps: 700   # количество шагов
 lr: 0.01
 target_length: 48000      # 3 сек * 16000 Гц
 
 # Параметры путей
-output_dir: "output_watermarked"
-keys_dir: "watermark_keys"
+output_dir: "/home/jovyan/kozodaev/WATERMARKING/output_watermarked"
+keys_dir: "/home/jovyan/kozodaev/WATERMARKING/watermark_keys"

@@ -45,7 +45,7 @@ print("\n   Загрузка модели")
 pipe = load_model(repo_id, cache_dir, torch.float32, device)
 
 print("\n   Генерация ключей")
-wk = WatermarkKeys(n_bits=n_bits)
+wk = WatermarkKeys(n_bits=n_bits, keys_dir = keys_dir)
 public_key, secret_key = wk.generate_keys("test_user", target_length)
 
 print("\n   Внедрение watermark")

@@ -4,23 +4,12 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Virtual environment
-.venv/
-venv/
-env/
-
-# Model cache (большие файлы)
+# Model cache
 model_cache/
 
 # Generated outputs
 output_watermarked/
 watermark_keys/
 
-# IDE
-.vscode/
-.idea/
-*.swp
-
-# OS
-.DS_Store
-Thumbs.db
+test_robustness.py
+transforms_zoo.py
